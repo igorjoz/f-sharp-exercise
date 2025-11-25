@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "lab6-f-sharp-exercise", "lab6-f-sharp-exercise\lab6-f-sharp-exercise.fsproj", "{000163F3-3C4F-411F-B1E8-CD9B910B5355}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{000163F3-3C4F-411F-B1E8-CD9B910B5355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{000163F3-3C4F-411F-B1E8-CD9B910B5355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{000163F3-3C4F-411F-B1E8-CD9B910B5355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{000163F3-3C4F-411F-B1E8-CD9B910B5355}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30370877-4B1F-4A3C-A4FC-BF2F648E3F70}
+	EndGlobalSection
+EndGlobal

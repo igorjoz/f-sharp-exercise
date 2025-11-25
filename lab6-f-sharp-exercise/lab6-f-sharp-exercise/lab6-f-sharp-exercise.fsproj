@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>lab6_f_sharp_exercise</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="DomainTypes.fs" />
+    <Compile Include="Stocks.fsi" />
+    <Compile Include="Stocks.fs" />
+    <Compile Include="Library.fs" />
+	<None Include="Script.fsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.Collections.ParallelSeq" Version="1.2.0" />
+    <PackageReference Include="XPlot.Plotly" Version="4.1.0" />
+  </ItemGroup>
+
+</Project>
