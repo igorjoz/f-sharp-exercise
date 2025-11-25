@@ -1,0 +1,58 @@
+[
+  {
+    "Id": 1,
+    "Details": {
+      "FirstName": "John",
+      "LastName": "Doe",
+      "DateOfBirth": "1980-01-01",
+      "LibraryCardNumber": "LIB001",
+      "Email": null,
+      "PhoneNumber": "123-456-7890",
+      "Address": null
+    },
+    "Deposit": 50.0,
+    "JoinDate": "2020-01-01",
+    "AccountStatus": "Standard",
+    "Fines": 0.0
+  },
+  {
+    "Id": 2,
+    "Details": {
+      "FirstName": "Jane",
+      "LastName": "Smith",
+      "DateOfBirth": "1990-05-15",
+      "LibraryCardNumber": "LIB002",
+      "Email": "jane.smith@example.com",
+      "PhoneNumber": null,
+      "Address": "123 Main St, City"
+    },
+    "Deposit": 100.0,
+    "JoinDate": "2021-06-01",
+    "AccountStatus": "Premium",
+    "Fines": 10.0
+  },
+  {
+    "Id": 3,
+    "Details": {
+      "FirstName": "Bob",
+      "LastName": "Johnson",
+      "DateOfBirth": "1985-11-20",
+      "LibraryCardNumber": "LIB003",
+      "Email": "bob.j@example.com",
+      "PhoneNumber": "555-0101",
+      "Address": "456 Oak Ave, Town"
+    },
+    "Deposit": 75.0,
+    "JoinDate": "2023-01-10",
+    "AccountStatus": "Standard",
+    "Fines": 5.0
+  },
+  {
+    "Id": 4,
+    "Details": null,
+    "Deposit": 20.0,
+    "JoinDate": "2024-01-01",
+    "AccountStatus": "Standard",
+    "Fines": 0.0
+  }
+]

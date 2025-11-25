@@ -1,0 +1,27 @@
+[
+  {
+    "ReaderId": 1,
+    "Loans": [
+      { "ISBN": "978-3-16-148410-0", "IsReturned": true },
+      { "ISBN": "978-0-13-235088-4", "IsReturned": false }
+    ]
+  },
+  {
+    "ReaderId": 2,
+    "Loans": [
+      { "ISBN": "978-0-201-63361-0", "IsReturned": true },
+      { "ISBN": "978-0-201-61622-4", "IsReturned": true },
+      { "ISBN": "978-0-13-110362-7", "IsReturned": true }
+    ]
+  },
+  {
+    "ReaderId": 3,
+    "Loans": []
+  },
+  {
+    "ReaderId": 4,
+    "Loans": [
+      { "ISBN": "978-0-13-449416-6", "IsReturned": false }
+    ]
+  }
+]

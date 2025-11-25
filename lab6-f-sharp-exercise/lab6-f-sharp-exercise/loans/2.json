@@ -1,0 +1,1 @@
+{ "ReaderId": 2, "Loans": [ { "ISBN": "978-0-201-63361-0", "IsReturned": true }, { "ISBN": "978-0-201-61622-4", "IsReturned": true }, { "ISBN": "978-0-13-110362-7", "IsReturned": true } ] }

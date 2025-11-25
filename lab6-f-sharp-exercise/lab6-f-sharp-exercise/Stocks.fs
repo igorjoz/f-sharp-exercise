@@ -44,13 +44,8 @@ module Prices =
         }
 
 
-// ==============================================
-// III. F# w ujęciu obiektowym – klasa StockAnalyzer
-// ==============================================
-
 type StockAnalyzer(ticker:string, days:int, prices:(DateTime * float)[]) =
 
-    // bierzemy ostatnie "days" notowań, posortowane po dacie rosnąco
     let window =
         prices
         |> Array.sortBy fst
@@ -69,7 +64,6 @@ type StockAnalyzer(ticker:string, days:int, prices:(DateTime * float)[]) =
     member _.Days   = days
     member _.Prices = window
 
-    /// odchylenie standardowe dziennych stóp zwrotu
     member _.StdDev =
         if returns.Length = 0 then 0.0
         else
@@ -80,7 +74,6 @@ type StockAnalyzer(ticker:string, days:int, prices:(DateTime * float)[]) =
                 d * d)
             |> sqrt
 
-    /// całkowita stopa zwrotu za zadany okres
     member _.TotalReturn =
         if closes.Length = 0 then 0.0
         else
@@ -93,18 +86,15 @@ type StockAnalyzer(ticker:string, days:int, prices:(DateTime * float)[]) =
                 ticker days this.StdDev (this.TotalReturn * 100.0)
 
 
-/// Fabryka: synchroniczne i asynchroniczne tworzenie analizatorów
 [<Sealed>]
 type StockAnalyzerFactory private () =
 
-    /// wersja synchroniczna – GetAnalyzers
     static member GetAnalyzers (tickers:string[], days:int) : StockAnalyzer[] =
         tickers
         |> Array.map (fun t ->
             let prices = Prices.loadPrices t
             StockAnalyzer(t, days, prices))
 
-    /// wersja asynchroniczna – GetAnalyzersAsync
     static member GetAnalyzersAsync (tickers:string[], days:int)
         : Async<StockAnalyzer[]> =
 
